@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	transition: 0.5s;
+	text-transform: capitalize;
+		
+}
+	
+}
+html{
+	font-size: 65%;
+	scroll-behavior: smooth;
+}
+.header{
+	padding: 1rem 7%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100%;
+	background: #1d1d23;
+}
+.logo img{
+	width: 60px;
+}
+.navbar a{
+	color: white;
+	margin: 0;
+	padding: 0;
+
+}
