@@ -24,7 +24,9 @@ html{
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100%;
-	background: #1d1d23;
+	background: black;
+
+
 }
 .logo img{
 	width: 60px;
@@ -32,6 +34,9 @@ html{
 .navbar a{
 	color: white;
 	margin: 0;
-	padding: 0;
+	padding:0;
+
+
+
 
 }
