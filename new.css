@@ -26,17 +26,20 @@ nav{
 	justify-content: space-between;
 }
 nav .logo{
-	width: 80px;
+	width: 120px;
+	
 }
 nav ul li{
 	list-style: none;
 	display: inline-block;
 	margin-left: 40px ;
+	margin-bottom: 5px;
 }
 nav ul li a{
 	text-decoration: none;
 	color: white;
-	font-size: 20px;
+	font-size: 24px;
+
 }
 .content{
 	text-align: center;
@@ -57,9 +60,47 @@ nav ul li a{
 	border-radius: 50px;
 	margin-top: 20px;
 }
+
+blockvideo------
 .backvideo{
 	position:absolute;
 	right:0 ;
 	bottom: 0;
 	z-index: -1;
 }
+
+@media (min-aspect-ratio: 16/9){
+	.backvideo{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9){
+	.backvideo{
+		width: auto;
+		height: 100%;
+	}
+}
+
+.slide{
+	animation: slideup 1s linear upward;
+}
+@keyframes slideup{
+	0%{
+		transform: translate(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px);
+		opacity: 1;
+	}
+
+}
+body{	width: 100% ;
+	height: 100vh ;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(img/back.jpg) ;
+	background-size: cover;
+	background-position: center;
+	padding left: 5%;
+	padding righ: 5%;
+	position: relative;}
