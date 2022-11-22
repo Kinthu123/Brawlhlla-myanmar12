@@ -1,3 +1,18 @@
+text-decoration: none;
+	display: inline-flex;
+	color: white;
+	font-size: 20px;
+	padding: 14px 70px;
+	border-radius: 50px;
+	margin-bottom: 150px;
+	border-radius: 10px;
+	font-size: 26px;
+	background-color: #dd7917;
+	------------
+
+	box-shadow: 0 010px black, 0 0 40px black, 0 0 0px black;
+-------------
+
 *{
 	margin: 0;
 	padding: 0;
@@ -9,7 +24,7 @@
 	height: 100vh ;
 	background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12,3,51,0.3));
 	position: relative;
-	padding: 0 4%;
+	padding: 0 5%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -20,7 +35,7 @@ nav{
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 2px 4%;
+	padding: 10px 2%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -49,7 +64,7 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 	font-size: 10px;
-	padding: 10px 20px;
+	padding: 20px 10px;
 
 
 
@@ -57,7 +72,8 @@ nav ul li a{
  a:hover{
 	color: white;
 	background: black;
-	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+	box-shadow:,  0 0 80px black;
+
 }
 
 
@@ -92,7 +108,7 @@ nav ul li a{
 .content a:hover{
 	color: white;
 	background: black;
-	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+	box-shadow: 0 010px black, 0 0 40px black, 0 0 80px black;
 
 }
 
@@ -135,3 +151,21 @@ nav ul li a{
 	}
 
 }
+----------
+nron effect 
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 10px;
+	padding: 10px 20px;
+
+
+
+}
+ a:hover{
+	color: white;
+	background: black;
+	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}
+-------
