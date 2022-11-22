@@ -30,6 +30,7 @@ nav .logo{
 
 
 
+
 	
 }
 nav ul li{
@@ -50,66 +51,15 @@ nav ul li a{
 	color: white;
 	font-size: 10px;
 	padding: 10px 20px;
-
-
+	
 
 }
  a:hover{
 	color: white;
 	background: black;
 	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
-}
-
-
-
-
-.content{
-	text-align: center;
-}
-.content img{
-	width: 600px;
-	margin-left: 0;
-	margin-right: 0;
-	display: flex;
-	
-	
-}
- .content a {
- 	position: relative;
- 	display: inline-block;
- 	padding: 15px 30px;
- 	color: #2196f3;
- 	text-transform: uppercase;
- 	letter-spacing: 4px;
- 	text-decoration: none;
- 	font-size: 24px;
- 	overflow: hidden;
- 	transition: 0.2s;
-	
-
-}
-.content a:hover{
-	color: white;
-	background: black;
-	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
 	transition: 0.2s;
-
 }
-a span {
-	position: absolute;
-	display: block;
-}
-a span:nth-child(1){
-	top:0;
-	left: 0%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg,transparent,black);
-}
-
-
-
-
 .backvideo{
 	position:absolute;
 	right:0 ;
@@ -132,21 +82,43 @@ a span:nth-child(1){
 		height: 100%;
 	}
 }
-
-.slide{
-	animation: slideup 1s linear upward;
+.container{
+	position: absolute;
+	display: flex;
+	height: calc(80% - 100px);
+	width: calc(80% - 100px);
+	z-index: 100;
 }
-@keyframes slideup{
-	0%{
-		transform: translate(100px);
-		opacity: 0;
-	}
-	100%{
-		transform: translate(0px);
-		opacity: 1;
-	}
-
+.container .box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-right: 50px solid transparent;
 }
 
-
-
+.container .box:last-child{
+	border-right: none;
+}
+.container .box .imgbx{ 
+	position: absolute;
+	top: 20;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.2s;
+	filter: grayscale(30%) ;
+}
+.container .box .imgbx img{
+	position: absolute;
+	top:0px ;
+	left:0 ;
+	width:100%;
+	height: 100%;
+	object-fit: cover ;
+}
+.container :hover{
+	border: transparent;
+	background: black;
+	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
+}

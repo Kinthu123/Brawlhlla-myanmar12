@@ -169,3 +169,13 @@ nav ul li a{
 	box-shadow: 0 0 5px black, 0 0 10px black, 0 0 10px black;
 }
 -------
+
+<div class="wrapper">
+		<div class="card">
+			<img src="img/axe.png">
+			<div class="info">
+			<h1>Axe</h1>
+			<p>BLA BLA BLA BLA BLA BLA</p>
+		</div>
+		</div>
+	</div>
