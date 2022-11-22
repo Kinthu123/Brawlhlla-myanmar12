@@ -26,47 +26,62 @@ nav{
 	justify-content: space-between;
 }
 nav .logo{
-	width: 120px;
+	width: 100px;
 	
 }
 nav ul li{
 	list-style: none;
-	display: inline-block;
-	margin-left: 40px ;
+	display: inline-flex;
+	margin-left: 60px ;
 	margin-bottom: 5px;
 }
 nav ul li a{
 	text-decoration: none;
 	color: white;
-	font-size: 24px;
+	font-size: 15px;
+	
+	
 
 }
 .content{
 	text-align: center;
 }
-.content h1{
-	font-size: 160px;
-	color: white;
-	font-weight: 600;
-
+.content img{
+	width: 600px;
+	margin-left: 0;
+	margin-right: 0;
+	display: flex;
+	
+	
+	
 }
-.content a{
+ .content a {
 	text-decoration: none;
-	display: inline-block;
+	display: inline-flex;
 	color: white;
-	font-size: 24px;
-	border: 2px solid white;
+	font-size: 20px;
 	padding: 14px 70px;
 	border-radius: 50px;
-	margin-top: 20px;
+	margin-bottom: 150px;
+	border-radius: 10px;
+	font-size: 26px;
+	background-color: #dd7917;
+
+}
+a:hover{
+
 }
 
-blockvideo------
+
+
 .backvideo{
 	position:absolute;
 	right:0 ;
 	bottom: 0;
 	z-index: -1;
+	filter: blur(5px);
+	display: flex;
+
 }
 
 @media (min-aspect-ratio: 16/9){
@@ -96,11 +111,3 @@ blockvideo------
 	}
 
 }
-body{	width: 100% ;
-	height: 100vh ;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(img/back.jpg) ;
-	background-size: cover;
-	background-position: center;
-	padding left: 5%;
-	padding righ: 5%;
-	position: relative;}
